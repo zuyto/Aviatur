@@ -93,7 +93,7 @@ namespace ReservaVuelos.Api.Controllers
 		}
 
 		/// <summary>
-		/// Endpoint encargado de obtener una reserva
+		/// Endpoint encargado de obtener una reserva por código 
 		/// </summary>
 		/// <returns></returns>
 		/// <response code="200">OK. Devuelve el objeto solicitado</response>
