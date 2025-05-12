@@ -1,8 +1,18 @@
-# ReservaVuelos API - Sistema de Reservas
+# Descripción del Desarrollo – Prueba Técnica .NET Senior
 
 ## 📌 Descripción
 
-Esta API REST permite gestionar las reservas de jn usuario
+Este proyecto consiste en el diseño e implementación de una solución full stack utilizando .NET 8 y Blazor Server, aplicando principios de arquitectura limpia y arquitectura en cebolla, orientada a cumplir los requerimientos establecidos en la prueba técnica para el rol de Profesional Senior en .NET.
+
+## 🎯 Objetivo funcional
+Desarrollar una solución que permita:
+
+Registrar reservas de vuelo, validando origen y destino contra una API externa real (AviationStack).
+
+Consultar reservas existentes mediante un código único.
+
+Visualizar las reservas del día en una interfaz interactiva (tipo tablero) construida con Blazor.
+
 
 ## 🛠️ Stack Tecnológico
 
@@ -39,11 +49,12 @@ cd Aviatur
 
 1. Asegúrate de tener **SQL Server** instalado y en ejecución.
 2. La cadena de conexión está en `launchSettings.json` bajo la clave `RESERVAS_DB_CONEXION`.
+3. Debe modificar la cadena de conexión en `launchSettings.json` bajo la clave `RESERVAS_DB_CONEXION`.
 
 
 ## 📌 Endpoints Principales
 
-### 🔹 Transferencias
+### 🔹 Reservar
 
 | Método | Endpoint                | Descripción      |
 | ------ | ----------------------- | ---------------- |
@@ -51,20 +62,36 @@ cd Aviatur
 | GET   | `/api/Reservas/ObtenerReservaPorCodigo` | Consultar reserva por Código |
 | GET   | `/api/Reservas/GetReservasDelDia/dia` | Consultar Reservas del dia |
 
-**Ejemplo de petición:**
+**Ejemplo de petición POST:**
 
 ```json
 {
-  "cliente": "string",
-  "origen": "string",
-  "destino": "string",
-  "fechaSalida": "2025-05-12T08:12:55.034Z"
+  "cliente": "MAO",
+  "origen": "AAA",
+  "destino": "AAB",
+  "fechaSalida": "2025-05-12T00:48:34.550Z"
 }
 ```
 
-## 📦 Lógica de Transferencias
+## 🔗 Integración con API externa
+Se integró el consumo de AviationStack API utilizando un cliente HTTP encapsulado en el servicio HttpServiceManager. Este componente maneja:
 
-### 🔹 Servicio `ReservaVuelosService`
+Construcción de URLs dinámicas.
+
+Headers de autenticación.
+
+Manejo centralizado de errores y logging.
+
+Se validan los códigos IATA de origen y destino antes de registrar una reserva.
+
+## 📦 Swagger 
+```sh
+https://localhost:44375/index.html
+```
+
+## 📦 Lógica de Reserva Vuelos
+
+## 📦 Servicio `ReservaVuelosService`
 
 Este servicio maneja la lógica de transferencias entre billeteras.
 
@@ -77,6 +104,17 @@ Este servicio maneja la lógica de transferencias entre billeteras.
   - El campo 'Destino' es obligatorio.
   - El campo 'Destino' debe tener exactamente 3 caracteres (código IATA).
   - La 'FechaSalida' debe ser igual o posterior a hoy.
+
+## ✅ Buenas prácticas aplicadas
+Principio de responsabilidad única (SRP).
+
+Inyección de dependencias (IHttpClientFactory, ISerilogImplements).
+
+Centralización de manejo HTTP.
+
+Separación de lógica y presentación.
+
+Código limpio y fácilmente testeable.
 
 ## 🧪 Pruebas
 

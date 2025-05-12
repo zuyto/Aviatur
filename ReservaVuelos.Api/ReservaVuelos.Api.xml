@@ -29,7 +29,7 @@
         </member>
         <member name="M:ReservaVuelos.Api.Controllers.ReservasController.ObtenerReservaPorCodigo(System.String)">
             <summary>
-            Endpoint encargado de obtener una reserva
+            Endpoint encargado de obtener una reserva por código 
             </summary>
             <returns></returns>
             <response code="200">OK. Devuelve el objeto solicitado</response>
