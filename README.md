@@ -1,4 +1,4 @@
-# ReservaVuelos API - Sistema de Transferencias
+# ReservaVuelos API - Sistema de Reservas
 
 ## 📌 Descripción
 
