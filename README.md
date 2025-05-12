@@ -1,2 +1,0 @@
-# Aviatur
-Prueba Tecnica

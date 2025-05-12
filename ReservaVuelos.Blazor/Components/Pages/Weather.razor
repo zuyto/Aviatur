@@ -1,0 +1,47 @@
+@page "/weather"
+@inject IReservaService Service
+
+<h3>Reservas del Día</h3>
+
+@if (!string.IsNullOrEmpty(error))
+{
+    <p class="text-danger">@error</p>
+}
+else if (reservas == null)
+{
+    <p>Cargando...</p>
+}
+else if (reservas.Count == 0)
+{
+    <p>No hay reservas para hoy.</p>
+}
+else
+{
+    <ul>
+        @foreach (var r in reservas)
+        {
+            <li>@r.Cliente viaja de @r.Origen a @r.Destino - @r.FechaSalida</li>
+        }
+    </ul>
+}
+
+@code {
+    List<DtoReserva> reservas;
+    string error;
+
+    protected override async Task OnInitializedAsync()
+    {
+        error = "";
+        var response = await Service.ObtenerDelDiaAsync(DateTime.UtcNow.Date);
+
+        if (response.IsError)
+        {
+            error = response.ErrorMessage ?? "Ocurrió un error al obtener las reservas.";
+            reservas = null;
+        }
+        else
+        {
+            reservas = response?.Result?.Reserva ?? new();
+        }
+    }
+}

@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReservaVuelos.Api</name>
+    </assembly>
+    <members>
+        <member name="T:ReservaVuelos.Api.Controllers.ReservasController">
+            <summary>
+            Controller para la gestion de reservas
+            </summary>
+        </member>
+        <member name="M:ReservaVuelos.Api.Controllers.ReservasController.#ctor(ReservaVuelos.Application.Common.Interfaces.Services.Serilog.ISerilogImplements,ReservaVuelos.Application.Common.Interfaces.Services.IReservaService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serilogImplements"></param>
+            <param name="reservaService"></param>
+        </member>
+        <member name="M:ReservaVuelos.Api.Controllers.ReservasController.CrearReserva(ReservaVuelos.Application.Common.Models.DTOs.DtoJsonRequest)">
+            <summary>
+            Endpoint encargado de Crear una reserva
+            </summary>
+            <returns></returns>
+            <response code="200">OK. Devuelve el objeto solicitado</response>
+            <response code="409">Error durante el proceso</response>
+            <response code="500">Error interno en el API</response>
+            <response code="404">Error controlado cuando el Request es invalido</response>
+            <response code="400">Error controlado por el flitro del request</response>
+        </member>
+        <member name="M:ReservaVuelos.Api.Controllers.ReservasController.ObtenerReservaPorCodigo(System.String)">
+            <summary>
+            Endpoint encargado de obtener una reserva
+            </summary>
+            <returns></returns>
+            <response code="200">OK. Devuelve el objeto solicitado</response>
+            <response code="409">Error durante el proceso</response>
+            <response code="500">Error interno en el API</response>
+            <response code="404">Error controlado cuando el Request es invalido</response>
+            <response code="400">Error controlado por el flitro del request</response>
+        </member>
+        <member name="M:ReservaVuelos.Api.Controllers.ReservasController.GetReservasDelDia(System.DateTime)">
+            <summary>
+            Endpoint encargado de obtener las reservas del dia 
+            </summary>
+            <returns></returns>
+            <response code="200">OK. Devuelve el objeto solicitado</response>
+            <response code="409">Error durante el proceso</response>
+            <response code="500">Error interno en el API</response>
+            <response code="404">Error controlado cuando el Request es invalido</response>
+            <response code="400">Error controlado por el flitro del request</response>
+        </member>
+        <member name="T:ReservaVuelos.Api.DependecyInjectionGlobal.DependencyInjection">
+            <summary>
+            Clase encargada de realizar la inyeccion de dependencias
+            </summary>
+        </member>
+        <member name="M:ReservaVuelos.Api.DependecyInjectionGlobal.DependencyInjection.AddPresentation(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReservaVuelos.Api.DependecyInjectionGlobal.DependencyInjection.DesabilitarSSlDevQa(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Desabilita el SSL para Desarrollo y QA
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ReservaVuelos.Api.Filters.DtoJsonRequestValidator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ReservaVuelos.Api.Filters.DtoJsonRequestValidator.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ReservaVuelos.Api.Filters.ValidationFilter">
+            <summary>
+                Filtro para las validaciones
+            </summary>
+        </member>
+        <member name="M:ReservaVuelos.Api.Filters.ValidationFilter.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+                OnActionExecutionAsync
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ReservaVuelos.Api.Filters.FluentValidationFilter">
+            <summary>
+                FluentValidationFilter
+            </summary>
+        </member>
+        <member name="M:ReservaVuelos.Api.Filters.FluentValidationFilter.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+                OnActionExecutionAsync
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReservaVuelos.Api.Filters.FluentValidationFilter.FindValidatorType(System.Type)">
+            <summary>
+                FindValidatorType
+            </summary>
+            <param name="evt"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:ReservaVuelos.Api.Middleware.ConfigureSwaggerOptions">
+            <summary>
+                Configuración de Swagger
+            </summary>
+        </member>
+        <member name="M:ReservaVuelos.Api.Middleware.ConfigureSwaggerOptions.#ctor(Asp.Versioning.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+                Contructor
+            </summary>
+            <param name="provider"></param>
+        </member>
+        <member name="M:ReservaVuelos.Api.Middleware.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <inheritdoc />
+        </member>
+        <member name="T:ReservaVuelos.Api.Middleware.LoggerConfigurationSerolog">
+            <summary>
+                Clase para la configuración de Serilog
+            </summary>
+        </member>
+        <member name="M:ReservaVuelos.Api.Middleware.LoggerConfigurationSerolog.Add">
+            <summary>
+                Metodo para agregar configuración de Serilog
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ReservaVuelos.Api.Middleware.NullBodyRequestMiddleware">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ReservaVuelos.Api.Middleware.NullBodyRequestMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:ReservaVuelos.Api.Middleware.NullBodyRequestMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ReservaVuelos.Api.Middleware.CustomMiddlewareExtensions">
+            <summary>
+                CustomMiddlewareExtensions
+            </summary>
+        </member>
+        <member name="M:ReservaVuelos.Api.Middleware.CustomMiddlewareExtensions.UseRequestResponseLogging(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+                UseRequestResponseLogging
+            </summary>
+            <param name="app"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ReservaVuelos.Api.Middleware.RequestResponseLoggerMiddleware">
+            <summary>
+                RequestResponseLoggerMiddleware
+            </summary>
+        </member>
+        <member name="M:ReservaVuelos.Api.Middleware.RequestResponseLoggerMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+                RequestResponseLoggerMiddleware
+            </summary>
+            <param name="next"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:ReservaVuelos.Api.Middleware.RequestResponseLoggerMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+                InvokeAsync
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReservaVuelos.Api.Middleware.RequestResponseLoggerMiddleware.FormatHeaders(Microsoft.AspNetCore.Http.IHeaderDictionary)">
+            <summary>
+                FormatHeaders
+            </summary>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReservaVuelos.Api.Middleware.RequestResponseLoggerMiddleware.ReadBodyFromRequest(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+                ReadBodyFromRequest
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ReservaVuelos.Api.Middleware.SwaggerExtension">
+            <summary>
+                Configuración de Swagger File
+            </summary>
+            
+        </member>
+        <member name="M:ReservaVuelos.Api.Middleware.SwaggerExtension.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+                Agrega la configuración de Swagger
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ReservaVuelos.Api.Middleware.VersioningExtensions">
+            <summary>
+                Versioning Extensions
+            </summary>
+        </member>
+        <member name="M:ReservaVuelos.Api.Middleware.VersioningExtensions.AddVersioning(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+                Add Versioning
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ReservaVuelos.Api.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:ReservaVuelos.Api.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:ReservaVuelos.Api.Resources.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:ReservaVuelos.Api.Resources.Description">
+            <summary>
+              Busca una cadena traducida similar a ReservaVuelos.Api.
+            </summary>
+        </member>
+        <member name="P:ReservaVuelos.Api.Resources.DocumentTitle">
+            <summary>
+              Busca una cadena traducida similar a ReservaVuelos.Api.
+            </summary>
+        </member>
+        <member name="P:ReservaVuelos.Api.Resources.HeadContent">
+            <summary>
+              Busca una cadena traducida similar a &lt;div class=&apos;cont-sod wrapper&apos;&gt;&lt;div id=&apos;img-cont&apos;&gt;&lt;img src=&apos;https://aviaturcdndev.z5.web.core.windows.net/assets/aviatur_assets/img/header/aviatur_logo_blue.svg&apos; class=&apos;home_icon&apos; alt=&apos;Homecenter&apos;/&gt;&lt;/div&gt;    &lt;div item xs={10} class=&apos;title-display&apos;&gt;&lt;div class=&apos;title-head&apos;&gt;&lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt; &lt;div class=&apos;subtitle-cont&apos; item xs={12}&gt;      &lt;div class=&apos;subtitle&apos;&gt;Viajar para conservar&lt;/div&gt;&lt;/div&gt;.
+            </summary>
+        </member>
+        <member name="P:ReservaVuelos.Api.Resources.Title">
+            <summary>
+              Busca una cadena traducida similar a ReservaVuelos.Api.
+            </summary>
+        </member>
+        <member name="P:ReservaVuelos.Api.Resources.UrlHome">
+            <summary>
+              Busca una cadena traducida similar a https://www.aviatur.com/.
+            </summary>
+        </member>
+        <member name="T:ReservaVuelos.Api.Response.ApiResponse`1">
+            <summary>
+                ApiResponse
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:ReservaVuelos.Api.Response.ApiResponse`1.#ctor">
+            <summary>
+                constructor
+            </summary>
+        </member>
+        <member name="M:ReservaVuelos.Api.Response.ApiResponse`1.#ctor(System.Boolean,System.Boolean,System.String,System.Collections.Generic.IEnumerable{System.String},`0,System.String)">
+            <summary>
+                ApiResponse
+            </summary>
+            <param name="isSuccessful"></param>
+            <param name="isError"></param>
+            <param name="errorMessage"></param>
+            <param name="messages"></param>
+            <param name="result"></param>
+            <param name="okMessage"></param>
+        </member>
+        <member name="M:ReservaVuelos.Api.Response.ApiResponse`1.CreateSuccessful(`0)">
+            <summary>
+                CreateSuccessful
+            </summary>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReservaVuelos.Api.Response.ApiResponse`1.CreateSuccessful(`0,System.String)">
+            <summary>
+            CreateSuccessful 
+            </summary>
+            <param name="result"></param>
+            <param name="okMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReservaVuelos.Api.Response.ApiResponse`1.CreateUnsuccessful(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+                CreateUnsuccessful
+            </summary>
+            <param name="messages"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReservaVuelos.Api.Response.ApiResponse`1.CreateUnsuccessful(`0,System.String)">
+            <summary>
+            CreateUnsuccessful
+            </summary>
+            <param name="messages"></param>
+            <param name="errorMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReservaVuelos.Api.Response.ApiResponse`1.CreateError(System.String)">
+            <summary>
+                CreateError
+            </summary>
+            <param name="errorMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReservaVuelos.Api.Response.ApiResponse`1.CreateError(System.String,`0)">
+            <summary>
+            CreateError con resultado
+            </summary>
+            <param name="message"></param>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ReservaVuelos.Api.Response.ApiResponseBase`1">
+            <summary>
+                ApiResponseBase
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:ReservaVuelos.Api.Response.ApiResponseBase`1.OkMessage">
+            <summary>
+                OkMessage
+            </summary>
+        </member>
+        <member name="P:ReservaVuelos.Api.Response.ApiResponseBase`1.IsSuccessful">
+            <summary>
+                IsSuccessful
+            </summary>
+        </member>
+        <member name="P:ReservaVuelos.Api.Response.ApiResponseBase`1.ErrorMessage">
+            <summary>
+                ErrorMessage
+            </summary>
+        </member>
+        <member name="P:ReservaVuelos.Api.Response.ApiResponseBase`1.IsError">
+            <summary>
+                IsError
+            </summary>
+        </member>
+        <member name="P:ReservaVuelos.Api.Response.ApiResponseBase`1.Messages">
+            <summary>
+                Messages
+            </summary>
+        </member>
+        <member name="P:ReservaVuelos.Api.Response.ApiResponseBase`1.Result">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Clase principal del programa.
+            </summary>
+        </member>
+    </members>
+</doc>

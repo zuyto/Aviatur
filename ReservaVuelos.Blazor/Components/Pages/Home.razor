@@ -1,0 +1,47 @@
+@page "/"
+@inject IReservaService Service
+
+<h3>Crear Reserva</h3>
+
+<EditForm Model="@reserva" OnValidSubmit="Enviar" FormName="formCrearReserva">
+    <FluentValidationValidator TModel="DtoJsonRequest" />
+    <ValidationSummary />
+
+    <div class="mb-2">
+        <label>Cliente:</label>
+        <InputText @bind-Value="reserva.Cliente" class="form-control" />
+        <ValidationMessage For="@(() => reserva.Cliente)" />
+    </div>
+    <div class="mb-2">
+        <label>Origen (IATA):</label>
+        <InputText @bind-Value="reserva.Origen" class="form-control" />
+        <ValidationMessage For="@(() => reserva.Origen)" />
+    </div>
+    <div class="mb-2">
+        <label>Destino (IATA):</label>
+        <InputText @bind-Value="reserva.Destino" class="form-control" />
+        <ValidationMessage For="@(() => reserva.Destino)" />
+    </div>
+    <div class="mb-2">
+        <label>Fecha de salida:</label>
+        <InputDate @bind-Value="reserva.FechaSalida" class="form-control" />
+        <ValidationMessage For="@(() => reserva.FechaSalida)" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(codigo))
+{
+    <p class="mt-3 text-success">Reserva creada con código: <strong>@codigo</strong></p>
+}
+
+@code {
+    DtoJsonRequest reserva = new();
+    string codigo;
+
+    async Task Enviar()
+    {
+        codigo = await Service.CrearReservaAsync(reserva);
+    }
+}

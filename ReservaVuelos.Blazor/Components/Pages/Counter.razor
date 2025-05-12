@@ -1,0 +1,39 @@
+@page "/counter"
+@rendermode InteractiveServer
+
+@inject IReservaService Service
+
+<h3>Buscar Reserva por Código</h3>
+
+<InputText @bind-Value="codigo" />
+<button @onclick="Buscar">Buscar</button>
+
+@if (!string.IsNullOrEmpty(error))
+{
+    <p class="text-danger">@error</p>
+}
+else if (reserva != null)
+{
+    <p>@reserva.Reserva.Cliente viaja de @reserva.Reserva.OrigenCiudad a @reserva.Reserva.DestinoCiudad</p>
+}
+
+@code {
+    string codigo;
+    DtoJsonResponseGetCodigo? reserva;
+    string error;
+
+    async Task Buscar()
+    {
+        error = "";
+        var response = await Service.ObtenerPorCodigoAsync(codigo);
+        if (response?.IsError == true)
+        {
+            error = response.ErrorMessage ?? "Ocurrió un error inesperado.";
+            reserva = null;
+        }
+        else
+        {
+            reserva = response?.Result;
+        }
+    }
+}
