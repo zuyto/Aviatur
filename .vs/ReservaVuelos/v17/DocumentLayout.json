@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\REPOSITORIOS\\Aviatur\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{217D868C-F90A-4A3B-AE7D-814754B0A124}|ReservaVuelos.Application\\ReservaVuelos.Application.csproj|c:\\repositorios\\aviatur\\reservavuelos.application\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D868C-F90A-4A3B-AE7D-814754B0A124}|ReservaVuelos.Application\\ReservaVuelos.Application.csproj|solutionrelative:reservavuelos.application\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D868C-F90A-4A3B-AE7D-814754B0A124}|ReservaVuelos.Application\\ReservaVuelos.Application.csproj|c:\\repositorios\\aviatur\\reservavuelos.application\\common\\struct\\configurationstruct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D868C-F90A-4A3B-AE7D-814754B0A124}|ReservaVuelos.Application\\ReservaVuelos.Application.csproj|solutionrelative:reservavuelos.application\\common\\struct\\configurationstruct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0265B98-E9CB-403F-88ED-94A84896042D}|ReservaVuelos.UnitTests.Infrastructure\\ReservaVuelos.UnitTests.Infrastructure.csproj|c:\\repositorios\\aviatur\\reservavuelos.unittests.infrastructure\\dependecyinjectiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0265B98-E9CB-403F-88ED-94A84896042D}|ReservaVuelos.UnitTests.Infrastructure\\ReservaVuelos.UnitTests.Infrastructure.csproj|solutionrelative:reservavuelos.unittests.infrastructure\\dependecyinjectiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED3000C1-CDFD-4B0E-9675-A14A8FDAAFA4}|ReservaVuelos.Api\\ReservaVuelos.Api.csproj|c:\\repositorios\\aviatur\\reservavuelos.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED3000C1-CDFD-4B0E-9675-A14A8FDAAFA4}|ReservaVuelos.Api\\ReservaVuelos.Api.csproj|solutionrelative:reservavuelos.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D868C-F90A-4A3B-AE7D-814754B0A124}|ReservaVuelos.Application\\ReservaVuelos.Application.csproj|c:\\repositorios\\aviatur\\reservavuelos.application\\common\\static\\constantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D868C-F90A-4A3B-AE7D-814754B0A124}|ReservaVuelos.Application\\ReservaVuelos.Application.csproj|solutionrelative:reservavuelos.application\\common\\static\\constantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D868C-F90A-4A3B-AE7D-814754B0A124}|ReservaVuelos.Application\\ReservaVuelos.Application.csproj|c:\\repositorios\\aviatur\\reservavuelos.application\\common\\helpers\\generichelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D868C-F90A-4A3B-AE7D-814754B0A124}|ReservaVuelos.Application\\ReservaVuelos.Application.csproj|solutionrelative:reservavuelos.application\\common\\helpers\\generichelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A6E10AF-67CB-4C53-BA9D-76ABD1914FCA}|ReservaVuelos.Infrastructure\\ReservaVuelos.Infrastructure.csproj|c:\\repositorios\\aviatur\\reservavuelos.infrastructure\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A6E10AF-67CB-4C53-BA9D-76ABD1914FCA}|ReservaVuelos.Infrastructure\\ReservaVuelos.Infrastructure.csproj|solutionrelative:reservavuelos.infrastructure\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED3000C1-CDFD-4B0E-9675-A14A8FDAAFA4}|ReservaVuelos.Api\\ReservaVuelos.Api.csproj|c:\\repositorios\\aviatur\\reservavuelos.api\\response\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED3000C1-CDFD-4B0E-9675-A14A8FDAAFA4}|ReservaVuelos.Api\\ReservaVuelos.Api.csproj|solutionrelative:reservavuelos.api\\response\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED3000C1-CDFD-4B0E-9675-A14A8FDAAFA4}|ReservaVuelos.Api\\ReservaVuelos.Api.csproj|c:\\repositorios\\aviatur\\reservavuelos.api\\filters\\dtojsonrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED3000C1-CDFD-4B0E-9675-A14A8FDAAFA4}|ReservaVuelos.Api\\ReservaVuelos.Api.csproj|solutionrelative:reservavuelos.api\\filters\\dtojsonrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED3000C1-CDFD-4B0E-9675-A14A8FDAAFA4}|ReservaVuelos.Api\\ReservaVuelos.Api.csproj|c:\\repositorios\\aviatur\\reservavuelos.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ED3000C1-CDFD-4B0E-9675-A14A8FDAAFA4}|ReservaVuelos.Api\\ReservaVuelos.Api.csproj|solutionrelative:reservavuelos.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DependecyInjection.cs",
+              "DocumentMoniker": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Application\\DependecyInjection.cs",
+              "RelativeDocumentMoniker": "ReservaVuelos.Application\\DependecyInjection.cs",
+              "ToolTip": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Application\\DependecyInjection.cs",
+              "RelativeToolTip": "ReservaVuelos.Application\\DependecyInjection.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAhwCcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T07:11:05.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Api\\Program.cs",
+              "RelativeDocumentMoniker": "ReservaVuelos.Api\\Program.cs",
+              "ToolTip": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Api\\Program.cs",
+              "RelativeToolTip": "ReservaVuelos.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T07:09:20.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfigurationStruct.cs",
+              "DocumentMoniker": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Application\\Common\\Struct\\ConfigurationStruct.cs",
+              "RelativeDocumentMoniker": "ReservaVuelos.Application\\Common\\Struct\\ConfigurationStruct.cs",
+              "ToolTip": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Application\\Common\\Struct\\ConfigurationStruct.cs",
+              "RelativeToolTip": "ReservaVuelos.Application\\Common\\Struct\\ConfigurationStruct.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T07:08:49.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GenericHelpers.cs",
+              "DocumentMoniker": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Application\\Common\\Helpers\\GenericHelpers.cs",
+              "RelativeDocumentMoniker": "ReservaVuelos.Application\\Common\\Helpers\\GenericHelpers.cs",
+              "ToolTip": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Application\\Common\\Helpers\\GenericHelpers.cs",
+              "RelativeToolTip": "ReservaVuelos.Application\\Common\\Helpers\\GenericHelpers.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAD4v2cAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T07:00:32.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Constantes.cs",
+              "DocumentMoniker": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Application\\Common\\Static\\Constantes.cs",
+              "RelativeDocumentMoniker": "ReservaVuelos.Application\\Common\\Static\\Constantes.cs",
+              "ToolTip": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Application\\Common\\Static\\Constantes.cs",
+              "RelativeToolTip": "ReservaVuelos.Application\\Common\\Static\\Constantes.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvxgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T07:00:15.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DependecyInjection.cs",
+              "DocumentMoniker": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Infrastructure\\DependecyInjection.cs",
+              "RelativeDocumentMoniker": "ReservaVuelos.Infrastructure\\DependecyInjection.cs",
+              "ToolTip": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Infrastructure\\DependecyInjection.cs",
+              "RelativeToolTip": "ReservaVuelos.Infrastructure\\DependecyInjection.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAArwDsAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T06:48:47.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DependecyInjectionTests.cs",
+              "DocumentMoniker": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.UnitTests.Infrastructure\\DependecyInjectionTests.cs",
+              "RelativeDocumentMoniker": "ReservaVuelos.UnitTests.Infrastructure\\DependecyInjectionTests.cs",
+              "ToolTip": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.UnitTests.Infrastructure\\DependecyInjectionTests.cs",
+              "RelativeToolTip": "ReservaVuelos.UnitTests.Infrastructure\\DependecyInjectionTests.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAEwHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T06:46:58.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Api\\Response\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "ReservaVuelos.Api\\Response\\ApiResponse.cs",
+              "ToolTip": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Api\\Response\\ApiResponse.cs",
+              "RelativeToolTip": "ReservaVuelos.Api\\Response\\ApiResponse.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIAwwB4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T06:43:11.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DtoJsonRequestValidator.cs",
+              "DocumentMoniker": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Api\\Filters\\DtoJsonRequestValidator.cs",
+              "RelativeDocumentMoniker": "ReservaVuelos.Api\\Filters\\DtoJsonRequestValidator.cs",
+              "ToolTip": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Api\\Filters\\DtoJsonRequestValidator.cs",
+              "RelativeToolTip": "ReservaVuelos.Api\\Filters\\DtoJsonRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T06:37:35.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ReservaVuelos.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\REPOSITORIOS\\Aviatur\\ReservaVuelos.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ReservaVuelos.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-12T06:35:39.39Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
